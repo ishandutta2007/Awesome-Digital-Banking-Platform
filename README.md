@@ -52,9 +52,9 @@
 
 ## 🔓 Open-Source GitHub Projects
 
-*Leading open-source core banking engines, payment orchestration gateways, open banking APIs, and ledger systems, ranked by GitHub Star Count (Descending).*
+*Leading open-source core banking engines, payment orchestration gateways, open banking APIs, and ledger systems, ranked by GitHub Stars_Count (Descending).*
 
-| 🚀 Repository & Link | ⭐ GitHub Stars (Social) | 🧰 Domain / Category | 📝 Description & Tech Stack |
+| 🚀 Repository & Link | ⭐ GitHub_Stars (Social) | 🧰 Domain / Category | 📝 Description & Tech Stack |
 | :--- | :--- | :--- | :--- |
 | **[juspay/hyperswitch](https://github.com/juspay/hyperswitch)** | [![Stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers) | Payment Gateway & Orchestration | High-performance, composable payment switch built in Rust to connect multiple payment processors via a unified API. |
 | **[btcpayserver/btcpayserver](https://github.com/btcpayserver/btcpayserver)** | [![Stars](https://img.shields.io/github/stars/btcpayserver/btcpayserver?style=social&color=white)](https://github.com/btcpayserver/btcpayserver/stargazers) | Crypto Payment Processor | Self-hosted, open-source Bitcoin & crypto payment gateway with zero transaction fees and strict privacy controls. |
@@ -104,7 +104,7 @@ Contributions are welcome! Please follow these simple guidelines:
 
 1. **Fork the repository** 🍴
 2. **Add/Edit software entries** in `README.md` following the tabular layout.
-3. Include factual data: Platform Name, Verified Pricing, Free Tier / Trial limits, Star Count badges, and official links.
+3. Include factual data: Platform Name, Verified Pricing, Free Tier / Trial limits, Stars_Count badges, and official links.
 4. **Submit a Pull Request** with a clear explanation of your additions 🚀
 
 ---
@@ -136,3 +136,12 @@ Your support is greatly appreciated!
 ---
 
 <p center align="center">Made with ❤️ for FinTech Founders, Core Banking Architects, and Bank Digital Transformation Teams.</p>
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Digital-Banking-Platform&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Digital-Banking-Platform_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Digital-Banking-Platform_growth.svg">
+  </picture>
+</a>
