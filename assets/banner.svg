@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Dark Financial Navy Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+
+    <!-- Accent Emerald-Blue Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+
+    <!-- Glowing Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bgGrad)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+
+  <!-- Dynamic Animated Floating Elements (Background Layer) -->
+  <g opacity="0.25">
+    <!-- Pulse Circle 1 -->
+    <circle cx="150" cy="80" r="45" fill="none" stroke="#10B981" stroke-width="2">
+      <animate attributeName="r" values="35;55;35" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Pulse Circle 2 -->
+    <circle cx="1050" cy="240" r="60" fill="none" stroke="#3B82F6" stroke-width="2">
+      <animate attributeName="r" values="50;75;50" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Floating Dynamic Network Line 1 -->
+    <path d="M -50,220 Q 200,100 450,260 T 950,150 T 1250,280" fill="none" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="6,6">
+      <animate attributeName="stroke-dashoffset" values="100;0" dur="15s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Floating Dynamic Network Line 2 -->
+    <path d="M -50,100 Q 300,280 600,120 T 1100,220" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" values="0;100" dur="20s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Side Decorative Cards / Badges (Framing elements away from center title) -->
+  <!-- Left Side Floating Card -->
+  <g transform="translate(60, 110)" opacity="0.85">
+    <rect width="170" height="100" rx="12" fill="#1E293B" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="20" y="35" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">CORE BANKING</text>
+    <text x="20" y="65" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold">API First ⚡</text>
+    <path d="M 140 30 L 155 45 L 140 60" fill="none" stroke="#10B981" stroke-width="2"/>
+    <animateTransform attributeName="transform" type="translate" values="60,110; 60,100; 60,110" dur="4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Right Side Floating Card -->
+  <g transform="translate(970, 110)" opacity="0.85">
+    <rect width="170" height="100" rx="12" fill="#1E293B" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="20" y="35" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">ECOSYSTEM</text>
+    <text x="20" y="65" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold">SaaS &amp; OSS 🚀</text>
+    <animateTransform attributeName="transform" type="translate" values="970,110; 970,120; 970,110" dur="5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Top Decorative Gradient Bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGrad)"/>
+
+  <!-- Foreground Main Content (Clear & High Contrast Center Stage) -->
+  <g text-anchor="middle">
+    <!-- Top Pill Badge -->
+    <g transform="translate(600, 68)">
+      <rect x="-120" y="-18" width="240" height="32" rx="16" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1.5"/>
+      <text y="3" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="1">
+        🏦 CURATED FINTECH STACK
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="150" fill="url(#textGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" letter-spacing="-0.5" filter="url(#glow)">
+      Awesome Digital Banking Platform
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="195" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" opacity="0.95">
+      Leading Commercial SaaS Suites &amp; Battle-Tested Open-Source Core Banking Engines
+    </text>
+
+    <!-- Bottom Feature Tags -->
+    <g transform="translate(600, 248)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">
+      <text x="-220" y="0">💳 Payment Infrastructure</text>
+      <circle cx="-135" cy="-4" r="3" fill="#06B6D4"/>
+      <text x="-60" y="0">🌐 Open Banking APIs</text>
+      <circle cx="45" cy="-4" r="3" fill="#06B6D4"/>
+      <text x="140" y="0">🔒 Cloud-Native Engines</text>
+    </g>
+  </g>
+</svg>
